@@ -21,9 +21,11 @@ namespace Prog122_L11_Notes_Week8
     {
         public MyNewWindow()
         {
-            InitializeComponent();
+            InitializeComponent();//<--Don't delete this and keep at the top of MyNewWindow()
+            //attach field name from Data class to the label
             lblBusinessName.Content = Data.BusinessName;
+            //attach obserable collection from Data class to list box (ItemSource)
             lbShowNames.ItemsSource = Data.names;
-        }
-    }
-}
+        }//end of MyNewWindow()
+    }//end of class
+}//end of namespace

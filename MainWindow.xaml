@@ -19,11 +19,11 @@
             HorizontalAlignment="Center"
             VerticalAlignment="Top" />
         <Button
-            x:Name="rtnOpenNewWindow"
+            x:Name="btnOpenNewWindow"
             Content="Open Window"
             Canvas.Left="691"
             Canvas.Top="394"
-            Click="rtnOpenNewWindow_Click" />
+            Click="btnOpenNewWindow_Click" />
         <ListBox
             x:Name="lbShowNames"
             Height="220"

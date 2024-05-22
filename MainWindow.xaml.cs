@@ -1,4 +1,8 @@
-﻿using System.Collections.ObjectModel;
+﻿//Charles Milender
+//5-20-2024
+//Programming 122
+//Lecture 11 Notes
+using System.Collections.ObjectModel;
 using System.Text;
 using System.Windows;
 using System.Windows.Controls;
@@ -24,15 +28,15 @@ namespace Prog122_L11_Notes_Week8
         
         public MainWindow()
         {
-            InitializeComponent();
+            InitializeComponent();//<--Don't delete this and keep at the top of MainWindow()
 
-            
+            //attach obserable collection from Data class to list box(ItemSource)
             lbShowNames.ItemsSource = Data.names;
             //attach the field from our static, Data.cs, class
             lblBusinessName.Content = Data.BusinessName;
-        }
+        }//end of MainWindow()
 
-        private void rtnOpenNewWindow_Click(object sender, RoutedEventArgs e)
+        private void btnOpenNewWindow_Click(object sender, RoutedEventArgs e)
         {
             //How to open the new window we created
             //When you create a new window, you are creating a new instanced object to call
@@ -44,8 +48,12 @@ namespace Prog122_L11_Notes_Week8
 
         private void btnAddName_Click(object sender, RoutedEventArgs e)
         {
+            //get user input from textbox
             String name = txtName.Text;
-            Data.names.Add(name);
+            //add user input to obserable collection in the Data class
+            //Data.names.Add(name);
+            //add user input to obserable collection in the Data class using method AddName
+            Data.AddName(name);
         }
-    }
-}
+    }//end of class
+}//end of namespace
