@@ -6,6 +6,8 @@ Static Classes
 can be called without creating an instance of it
 
 Observable Collection
+
+
 Standard Requirements
 
 Header ( Commented name, date, assignment name on MainWindow.xaml.cs )
